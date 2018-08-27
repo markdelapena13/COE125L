@@ -1,0 +1,8 @@
+username = input("Input Your Username: ")
+with open("Login.txt","r") as y:
+    for line in y:
+        (username,)=line.split()
+if username == open("Login.txt").read():
+    print("Logged In")
+else:    
+    print("Failed to Login")
