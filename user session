@@ -1,0 +1,11 @@
+# User session
+def session(username):
+    print("Welcome to your account " + username)
+    print("Do you want to logout?")
+    if users[username]["group"] == "admin":
+        print("")
+    while True:
+        option = input(username + " > ")
+        if option == "logout":
+            print("Logging out...")
+            break
